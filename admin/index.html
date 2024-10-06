@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistMan | Spotify , RadioJavan , Soundcloud</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/eb887e5453.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" type="image/png" href="../assets/image/icon.png" />
+</head>
+<body>
+    
+    <!-- Background -->
+    <div class="background">
+        <!-- <img src="./assets/image/dot.png" class="dot"> -->
+        <img src="../assets/image/Light.png" class="bg-light">
+    </div>
+
+    <!-- Login Section -->
+     <section class="login-form">
+        <div class="login-inputs">
+            <div class="input-username">
+                <p class="user-title">User Name :</p>
+                <input type="text" id="user" maxlength="12" autocomplete="off">
+            </div>
+            <div class="input-password">
+                <p class="password-title">Password :</p>
+                <input type="password" id="password" maxlength="20">
+            </div>
+            <input type="submit" id="submit" class="submit" onclick="checkLogin()">
+        </div>
+    </section>
+    
+    <p class="error"></p>
+
+    <!-- Top section -->
+    <section class="top admin-section">
+        <h1 class="section-title">Playlists that were recently added to the website</h1>
+        <p class="section-description">After checking the information and specifications of the playlist, confirm its addition</p>
+
+        <div class="grid-container"></div>
+    </section>
+    
+    <!-- Loading More -->
+    <div class="load-more">
+        <div class="loader"></div>
+        <p>Loading More ...</p>
+    </div>
+    <div class="black-cover" onclick="closeBtn()"></div>
+    
+    <!-- Edit Playlist -->
+    <div class="edit">
+    <div class="black-cover" onclick="closeBtn()"></div>
+
+    
+    <script src="../admin/script.js"></script>
+
+</body>
+</html>

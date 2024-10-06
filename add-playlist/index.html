@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistMan | Spotify , RadioJavan , Soundcloud</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/eb887e5453.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" type="image/png" href="../assets/image/icon.png" />
+</head>
+<body>
+    
+    <!-- Background -->
+    <div class="background">
+        <!-- <img src="../assets/image/dot.png" class="dot"> -->
+        <img src="../assets/image/Light.png" class="bg-light">
+    </div>
+
+    <header>
+        <!-- Logo -->
+        <div class="head">
+            <a href="https://playlistman.ir"><img src="../assets/image/Logo.png" alt="PlaylistMan Logo" class="header-logo"></a>
+        </div>
+    </header>
+
+    <form class="inputs">
+
+        <div class="left-input">
+
+          <div class="playlist-name-input inputs-child">
+            <h1 class="filed">Playlist Name:</h1>
+            <p class="filed-description">Choose a name for your playlist (max 16 words, min 5 words)</p>
+            <input type="text" id="playlist-name" maxlength="16" minlength="5">
+          </div>
+          
+          
+          <div class="playlist-platform-input inputs-child">
+            <h1 class="filed">Playlist Platform:</h1>
+            <p class="filed-description">Select the platform your playlist is on</p>
+            <div class="platform-input">
+              <span class="platform spotify" id="spotify">Spotify</span>
+              <span class="platform radiojavan" id="radiojavan">RadioJavan</span>
+              <span class="platform soundcloud" id="soundcloud">SoundCloud</span>
+            </div>
+          </div>
+          
+          <div class="playlist-auther-input inputs-child">
+            <h1 class="filed">Auther Name:</h1>
+            <p class="filed-description">Your name or the name of the playlist creator (max 12 words, min 3 words)</p>
+            <input type="text" id="playlist-auther" maxlength="12" minlength="3">
+          </div>
+          
+          <div class="playlist-description-input inputs-child">
+              <h1 class="filed">Playlist Description:</h1>
+              <p class="filed-description">Write a description of your playlist (max 150 words , min 30 words)</p>
+              <textarea name="" id="playlist-description" maxlength="150" minlength="30"></textarea>
+          </div>
+
+        </div>
+
+          <div class="right-input">
+
+
+            <div class="playlist-link-input inputs-child">
+              <h1 class="filed">Playlist Link:</h1>
+              <p class="filed-description">Write the link of your playlist (Accepted platforms are Radio Javan, Spotify, Soundcloud)</p>
+              <input type="url" id="playlist-link" required>
+              <p class="filed-description">Ex : https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M</p>
+            </div>
+    
+            <div class="playlist-tag-input inputs-child">
+                <h1 class="filed">Playlist Tags:</h1>
+                <p class="filed-description">Select the platform your playlist is on (max 8 tags)</p>
+                <div class="tags-input"></div>
+            </div>
+            
+            <div class="playlist-cover-input inputs-child">
+              <h1 class="filed">Playlist Cover:</h1>
+              <p class="filed-description">Leave the link of a photo as the cover of your playlist <br>(if you leave this section blank, a random cover will be selected)</p>
+              <input type="url" id="playlist-cover">
+              <p class="filed-description">Ex : https://i.ibb.co/NNqHMqX/13.webp</p>
+            </div>
+
+
+          </div>
+
+        <div class="playlist-submit-input inputs-child">
+            <div onclick="sendPlaylist()">Submit</div>
+        </div>
+
+
+    </form>
+
+    <div class="no-overflow">
+      <div class="error-card">
+        Playlist added to list
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./add-playlist/script.js"></script>
+    
+</body>
+</html>
