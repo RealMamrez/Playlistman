@@ -1,7 +1,7 @@
 
 # Playlist Man Website
 
-My playlist project is my first professional project that I tried to use html, css and javascript to create a website for sharing SoundCloud, Spotify and Radio Javan playlists for website users.
+Playlistman project is my first professional project that I tried to use html, css and javascript to create a website for sharing SoundCloud, Spotify and Radio Javan playlists for website users.
 
 ## Demo
 
